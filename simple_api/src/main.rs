@@ -1,4 +1,4 @@
-use warp::{Filter, reject::Reject, Rejection, Reply, http::StatusCode, http::Method};
+use warp::{Filter, reject::Reject, Rejection, Reply, http::StatusCode, http::Method, filters::{cors::CorsForbidden}};
 // use std::fmt;
 use std::io::{Error, ErrorKind};
 use std::str::FromStr;
@@ -70,14 +70,20 @@ async fn get_questions() -> Result<impl warp::Reply, warp::Rejection> {
 }
 
 async fn return_error(r:Rejection) -> Result<impl Reply, Rejection>{
-    if let Some(_invalid_id) = r.find::<InvalidId>() {
+    if let Some(error) = r.find::<CorsForbidden>() {
         Ok(warp::reply::with_status(
-            "No valid ID presented",
+            error.to_string(),
+            StatusCode::FORBIDDEN
+        ))
+    }
+    else if let Some(_invalid_id) = r.find::<InvalidId>() {
+        Ok(warp::reply::with_status(
+            "No valid ID presented".to_string(),
             StatusCode::UNPROCESSABLE_ENTITY
         ))
     } else {
         Ok(warp::reply::with_status(
-            "Route not found",
+            "Route not found".to_string(),
             StatusCode::NOT_FOUND
         ))
     }
@@ -87,6 +93,7 @@ async fn return_error(r:Rejection) -> Result<impl Reply, Rejection>{
 async fn main() {
     let cors = warp::cors()
         .allow_any_origin()
+        // .allow_header("not-in-the-request")
         .allow_header("content-type")
         .allow_methods(
             &[Method::PUT, Method::DELETE, Method::GET, Method:: POST]

@@ -2,6 +2,7 @@
 <module type="EMPTY_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/simple_api/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/httparse-5585b74bb19a1437/out" />
       <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/libc-a048f7421712dd24/out" />
       <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/native-tls-9ca16112b03c7331/out" />

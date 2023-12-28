@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="EMPTY_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/httparse-5585b74bb19a1437/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/libc-a048f7421712dd24/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/native-tls-9ca16112b03c7331/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/parking_lot_core-478b10b8a2099a21/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/proc-macro2-75d9f3a4550c7964/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/serde-5da96abb7f9fada6/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/serde_json-4d210a6135f401bf/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/build/system-configuration-sys-2a5181ad9f06eb30/out" />
+      <excludeFolder url="file://$MODULE_DIR$/async_app/target/debug/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/generic-array-e89c94e09e5f8b03/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/httparse-5585b74bb19a1437/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/libc-81826a1e6752bdc7/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/multer-971b1ae1f6e78e33/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/parking_lot_core-478b10b8a2099a21/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/proc-macro2-75d9f3a4550c7964/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/serde-5da96abb7f9fada6/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/serde_json-4d210a6135f401bf/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/build/unicase-cd41bffbbf168c94/out" />
+      <excludeFolder url="file://$MODULE_DIR$/minimal_rust_http/target/debug/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/generic-array-e89c94e09e5f8b03/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/httparse-5585b74bb19a1437/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/libc-81826a1e6752bdc7/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/multer-971b1ae1f6e78e33/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/parking_lot_core-478b10b8a2099a21/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/proc-macro2-75d9f3a4550c7964/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/serde-5da96abb7f9fada6/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/serde_json-4d210a6135f401bf/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/build/unicase-cd41bffbbf168c94/out" />
+      <excludeFolder url="file://$MODULE_DIR$/rest_api/target/debug/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/simple_api/target" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
